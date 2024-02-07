@@ -42,8 +42,7 @@ class Province {
         return getDemand() - getTotalProduction()
 
     }
-    
-    @available(iOS 13.0.0, *)
+
     func profit() -> Int {
         // 매출
         let satisfiedDemand = min(getDemand(), getTotalProduction())
