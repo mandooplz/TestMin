@@ -25,6 +25,7 @@ class Province {
     }
     
     func getName() -> String { name }
+    @available(iOS 13.0.0, *)
     func getProducers() -> some Collection<Producer> { producers }
     func setProducers(arr : Array<Producer>) {
         self.producers = arr

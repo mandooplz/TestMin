@@ -8,7 +8,7 @@ on:
 # 3
 jobs:
     build:
-        runs-on: macos-l3
+        runs-on: macos-latest
         # 4
         steps:
         - uses: actions/checkout@v2
