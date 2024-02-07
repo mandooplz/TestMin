@@ -1,0 +1,18 @@
+# 1
+name : Run Tests
+
+# 2
+on:
+    push
+
+# 3
+jobs:
+    build:
+        runs-on: macos-latests
+        # 4
+        steps:
+        - uses: actions/checkout@v2
+        - name: Do Tests
+            run: swift test
+    
+
